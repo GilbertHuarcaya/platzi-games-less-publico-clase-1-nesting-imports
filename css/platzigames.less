@@ -1,0 +1,23 @@
+/*Importar archivos en less*/ 
+@import "globales.less";
+@import "intros.less";
+@import "articulos.less";
+@import "cajas.less";
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: @color-primario;
+		color: @color-claro;
+	}
+
+	.intro {
+		background-color: @color-secundario;
+	}
+
+	.articulo--principal h2 {
+		color: @color-secundario;
+	}
+
+	.caja__contenido {
+		background-color: @color-secundario;
+	}
+}
